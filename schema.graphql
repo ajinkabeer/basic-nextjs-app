@@ -23,10 +23,12 @@ type Position {
   id: ID!
   startDate: Date!
   title: String!
+  years: Int!
 }
 
 type Query {
   bio: Bio!
+  position(id: ID): Position
   positions: [Position!]!
 }
 
