@@ -30,7 +30,11 @@ type Position {
 
 type Query {
   bio: Bio!
+
+  """Find a position by its id"""
   position(id: ID): Position
+
+  """Find all positions"""
   positions: [Position!]!
 }
 

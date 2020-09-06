@@ -2,6 +2,7 @@ import { idArg, queryType } from "@nexus/schema";
 import { data } from "src/data";
 import { Bio, Position } from "./index";
 
+//data at the top level of gql api
 export const Query = queryType({
   definition(t) {
     t.field("bio", {
@@ -10,10 +11,12 @@ export const Query = queryType({
     });
     t.list.field("positions", {
       type: Position,
+      description: "Find all positions",
       resolve: () => data.positions,
     });
     t.field("position", {
       type: Position,
+      description: "Find a position by its id",
       nullable: true,
       args: { id: idArg() },
       resolve: (root, { id }: { id: string }, ctx) =>
