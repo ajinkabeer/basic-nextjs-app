@@ -80,7 +80,7 @@ export default function Home() {
               </a>
             </p>
             <p>
-              <strong>Website</strong>
+              <strong>Blog</strong>
               <a className={styles.link} href={`${bio.website}`}>
                 {" " + new URL(bio.website).host}
               </a>

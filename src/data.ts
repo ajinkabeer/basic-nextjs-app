@@ -4,7 +4,7 @@ export const data = {
     tagline: "Software Engineer",
     email: "hvht7kf5t@relay.firefox.com",
     github: "https://github.com/ajinkabeer",
-    website: "https://www.ajin.dev",
+    website: "https://medium.com/@ajinkabeer",
     linkedin: "https://linkedin.com/in/ajinkabeer",
     objective:
       "Adaptable React / React Native Developer with 1.5+ years of comprehensive experience in Front-end development with willingness to learn and master Back-end with MongoDB, GraphQL and Serverless functions.",
