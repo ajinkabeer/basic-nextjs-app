@@ -3,7 +3,7 @@
  * Do not make changes to this file directly
  */
 
-
+import * as faces from "../interfaces"
 import { core } from "@nexus/schema"
 declare global {
   interface NexusGenCustomInputMethods<TypeName extends string> {
@@ -40,12 +40,7 @@ export interface NexusGenScalars {
 }
 
 export interface NexusGenRootTypes {
-  Bio: { // root type
-    email: string; // String!
-    name: string; // String!
-    objective: string; // String!
-    tagline: string; // String!
-  }
+  Bio: faces.BioInterface;
   Query: {};
 }
 
@@ -95,7 +90,7 @@ export type NexusGenScalarNames = "Boolean" | "Date" | "Float" | "ID" | "Int" | 
 export type NexusGenUnionNames = never;
 
 export interface NexusGenTypes {
-  context: any;
+  context: {};
   inputTypes: NexusGenInputs;
   rootTypes: NexusGenRootTypes;
   argTypes: NexusGenArgTypes;
