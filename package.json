@@ -17,8 +17,7 @@
     "micro": "^9.3.4",
     "next": "9.5.3",
     "react": "16.13.1",
-    "react-dom": "16.13.1",
-    "react-syntax-highlighter": "^13.5.3"
+    "react-dom": "16.13.1"
   },
   "devDependencies": {
     "@types/react": "^16.9.49",
