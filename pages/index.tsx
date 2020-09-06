@@ -104,7 +104,10 @@ export default function Home() {
                   <p className={styles.light}>{position.company}</p>
                   <p>
                     {format(new Date(position.startDate), "MMM yyyy ")} -{" "}
-                    {position.endDate ? position.endDate : "Present"} ({length})
+                    {position.endDate
+                      ? format(new Date(position.endDate), "MMM yyyy ")
+                      : "Present"}{" "}
+                    ({length})
                   </p>
                   <ul>
                     {position.achievements.map((achievement) => (
