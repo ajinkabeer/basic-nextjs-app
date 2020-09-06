@@ -19,7 +19,14 @@ export const Position = objectType({
         new Date(startDate)
       )
     );
-
-    //achievements
+    t.int(
+      "months",
+      ({ endDate, startDate }) =>
+        differenceInMonths(
+          endDate ? new Date(endDate) : new Date(),
+          new Date(startDate)
+        ) % 12
+    );
+    t.list.string("achievements", (position) => position.achievements);
   },
 });
